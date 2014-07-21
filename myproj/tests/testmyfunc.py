@@ -17,7 +17,7 @@ import mock
 from myproj.core import myfunc
 
 
-class MyTestOfAwesome(unittest.TestCase):
+class TestOfAwesome(unittest.TestCase):
 
     @mock.patch('myproj.core.myfunc.plugin')
     def test_stuff(self, mock_plugin):
