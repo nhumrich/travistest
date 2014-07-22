@@ -17,10 +17,10 @@ import mock
 from myproj.core import myfunc
 
 
-class TestOfAwesome(unittest.TestCase):
+class TestMyFunc(unittest.TestCase):
 
     @mock.patch('myproj.core.myfunc.plugin')
-    def test_stuff(self, mock_plugin):
+    def do_test(self, mock_plugin):
         mock_plugin.do_stuff.return_value = 'Hello world'
         result = myfunc.do_this()
         mock_plugin.do_stuff.assert_called_with()
